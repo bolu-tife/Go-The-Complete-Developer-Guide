@@ -17,9 +17,9 @@ func main() {
 
 	c := make(chan string)
 
-	// for _, link := range links {
-	// 	go checkLink(link, c)
-	// }
+	for _, link := range links {
+		go checkLink(link, c)
+	}
 
 	// for { // infinite loop
 	// 	go checkLink(<-c, c)
