@@ -14,3 +14,29 @@
 **Zero values** - Variables declared without an explicit initial value are given their zero value.
 
 **Constants** - Constants are declared like variables, but with the const keyword. Constants can be character, string, boolean, or numeric values eg const Pi = 3.14
+
+**For Loops**
+
+`for init; condition; increment{ statement }`
+it can also be `for ; condition; {statement}`
+
+For serves as while in go 
+`for condition {statement}`
+
+omiting the codition makes it an **infinite loop**
+`for {}` 
+
+**If Statements**
+
+if statement can start with a short statement to execute before the condition.
+
+```
+    if v := math.Pow(x, n); v < lim {
+		return v
+	}
+```
+
+**Defer Statements**
+
+A defer statement defers the execution of a function until the surrounding function returns. It also returns things in a LIFO{Last in First Out} order
+
